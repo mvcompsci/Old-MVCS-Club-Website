@@ -86,8 +86,7 @@
                         <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
                         <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
                         <li class="nav-item"><a class="scrollto" href="#features">Topics</a></li>
-<!--                        <li class="nav-item"><a class="scrollto" href="#docs">Docs</a></li>-->
-                        <li class="nav-item"><a class="scrollto" href="#license">USACO</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#news">News</a></li>
                         <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
@@ -102,18 +101,16 @@
             <p class="intro" style="font-size: 24px; margin-bottom: 30px;">Monta Vista Computer Science Club<br>Dedicated to teaching, inspiring, and enabling students interested in computer science</p>
             <div class="btns">
                 <span class="input input--minoru">
-                    <input class=" input__field input__field--minoru" placeholder="Enter Your Email to Sign Up" type="text" id="emailstuff" /><!--onkeyup="if (event.keyCode == 13 && $('#emailstuff:focus')) saveToParse();"-->
+                    <input class=" input__field input__field--minoru" placeholder="Enter Your Email to Sign Up" type="text" id="emailstuff"/>
                     <label class="input__label input__label--minoru" for="emailstuff"><br></label>
                     <a class="btn btn-cta-secondary" style="background-color: #FFD700; color: #993299;" href="javascript:void(0)" onclick="saveToParse();">SIGNUP</a>
               </span>
-<!--                <button type="button" class="btn btn-md">XSmall</button>-->
             </div>
             <ul class="list-inline">
                 <li><a href="#" target="https://github.com/mv-compsci-club/">Our Projects</a></li>
             </ul><!--//meta-->
         </div><!--//container-->
     </section><!--//promo-->
-
     <!-- ******ABOUT****** -->
     <section id="about" class="about section">
         <div class="container">
@@ -178,7 +175,6 @@
             </div><!--//row-->
         </div><!--//container-->
     </section><!--//about-->
-
     <!-- ******FEATURES****** -->
     <section id="features" class="features section">
         <div class="container text-center">
@@ -194,87 +190,55 @@
             </ul>
         </div><!--//container-->
     </section><!--//features-->
+<!--    <!-- ******DOCS****** -->
+<!--    <section id="docs" class="docs section">
+<!--        <div class="container">
+<!--            <div class="docs-inner">
+<!--            <h2 class="title text-center">Get Started</h2>
+<!--            <div class="block">
+<!--                <h3 class="sub-title text-center">HTML</h3>
+<!--                <p><a href="http://prismjs.com/" target="_blank">PrismJS</a> is used as the syntax highlighter here.</p>
+<!--                <p>Below are the details of the custom PrismJS build used in this template. You can <a href="http://prismjs.com/download.html" target="_blank">build your own version</a> via their website should you need to.</p>
+<!--                <ul class="list-unstyled">
+<!--                    <li><strong>Compression level:</strong> Minified</li>
+<!--                    <li><strong>Theme:</strong> Okaidia</li>
+<!--                    <li><strong>Languages:</strong> Markup, CSS, C-like, JavaScript, PHP and Python</li>
+<!--                </ul>
+<!--                <div class="code-block">
+<!--                    <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
+<!--
+<!--                </div><!--//code-block-->
+<!--            </div><!--//block-->
+<!--            <div class="block">
+<!--                <h3 class="sub-title text-center">CSS</h3>
+<!--                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+<!--
+<!--            </div><!--//block-->
+<!--
+<!--            <div class="block">
+<!--                <h3 class="sub-title text-center">JavaScript</h3>
+<!--                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit ligula eget dolor.</p>
+<!--                <div class="code-block">
+<!--
+<!--                </div><!--//code-block-->
+<!--            </div><!--//block-->
+<!--            <div class="block">
+<!--                <h3 class="sub-title text-center">Full Documentation</h3>
+<!--                <p>If your documentation is very long you can host the full docs page (including FAQ etc) on GitHub and provide a Call to Action button below to direct users there.</p>
+<!--                <p class="text-center">
+<!--                    <a class="btn btn-cta-primary" href="https://github.com/twbs/bootstrap" target="_blank">More on GitHub</a>
+<!--                </p>
+<!--            </div><!--//block-->
+<!--
+<!--            </div><!--//docs-inner-->
+<!--        </div><!--//container-->
+<!--    </section><!--//features-->
 
-    <!-- ******DOCS****** -->
-    <section id="docs" class="docs section">
-        <div class="container">
-            <div class="docs-inner">
-            <h2 class="title text-center">Get Started</h2>
-            <div class="block">
-                <h3 class="sub-title text-center">HTML</h3>
-                <p><a href="http://prismjs.com/" target="_blank">PrismJS</a> is used as the syntax highlighter here.</p>
-                <p>Below are the details of the custom PrismJS build used in this template. You can <a href="http://prismjs.com/download.html" target="_blank">build your own version</a> via their website should you need to.</p>
-                <ul class="list-unstyled">
-                    <li><strong>Compression level:</strong> Minified</li>
-                    <li><strong>Theme:</strong> Okaidia</li>
-                    <li><strong>Languages:</strong> Markup, CSS, C-like, JavaScript, PHP and Python</li>
-                </ul>
-                <div class="code-block">
-                    <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
-                    <pre><code class="language-markup">
-    &ltp class="my-style"&gt
-      Hello World!
-    &lt/p&gt
-                     </code></pre>
-                </div><!--//code-block-->
-            </div><!--//block-->
-
-            <div class="block">
-                <h3 class="sub-title text-center">CSS</h3>
-                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
-
-                <div class="code-block">
-                    <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
-                    <pre>
-    <code class="language-css">
-    /*
-     * Template Name: devAid - Responsive Website Template for developers
-     * Version: 1.0
-     * Author: Xiaoying Riley at 3rd Wave Media
-     * Website: http://themes.3rdwavemedia.com/
-     * Twitter: @3rdwave_themes
-    */
-    body {
-      font-family: 'Lato', arial, sans-serif;
-      color: #444444;
-      font-size: 16px;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-    </code></pre>
-                </div><!--//code-block-->
-            </div><!--//block-->
-
-            <div class="block">
-                <h3 class="sub-title text-center">JavaScript</h3>
-                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit ligula eget dolor.</p>
-                <div class="code-block">
-                    <pre><code class="language-javascript">
-    if( awesome ){
-        console.log('This is Awesome');
-    }else{
-        $('body').addClass('give-me-awesome');
-    }
-                    </code></pre>
-                </div><!--//code-block-->
-            </div><!--//block-->
-            <div class="block">
-                <h3 class="sub-title text-center">Full Documentation</h3>
-                <p>If your documentation is very long you can host the full docs page (including FAQ etc) on GitHub and provide a Call to Action button below to direct users there.</p>
-                <p class="text-center">
-                    <a class="btn btn-cta-primary" href="https://github.com/twbs/bootstrap" target="_blank">More on GitHub</a>
-                </p>
-            </div><!--//block-->
-
-            </div><!--//docs-inner-->
-        </div><!--//container-->
-    </section><!--//features-->
-
-    <!-- ******LICENSE****** -->
-    <section id="license" class="license section">
+    <!-- ******NEWS****** -->
+    <section id="news" class="license section">
         <div class="container">
             <div class="license-inner">
-            <h2 class="title text-center">License</h2>
+            <h2 class="title text-center">News</h2>
                 <div class="info">
                     <p>This Bootstrap theme is made by UX designer <a href="https://www.linkedin.com/in/xiaoying" target="_blank">Xiaoying Riley</a> at 3rd Wave Media for developers and is <strong>100% FREE</strong> under the <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License (CC BY 3.0)</a></p>
                     <p><strong>[Tip for developers]:</strong> If your project is open source, you might want to put a <a href="https://www.paypal.com/us/cgi-bin/?cmd=_donate-intro-outside" target="_blank">PayPal "Donate" button</a> below so your users can express their gratitude. If your project is commercial, you can put a <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_singleitem-intro-outside" target="_blank">PayPal "Buy Now" button</a> instead.</p>
