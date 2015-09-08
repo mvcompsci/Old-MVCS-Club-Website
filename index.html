@@ -18,6 +18,8 @@
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <script src="sweetalert/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="sweetalert/sweetalert.css">
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="assets/css/set1.css" />
@@ -27,15 +29,13 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
     <script>
-
         Parse.initialize("H4NX7s5ZmbeK49sQnE70wxlXbSd6qHKyVTCO1brq", "Wvs0TMiAngCzXRVctlIGy4qE1bzWarrk21jDgibs");
         function saveToParse(){
             var TestObject = Parse.Object.extend("Emails");
             var testObject = new TestObject();
             testObject.save({emails:    document.getElementById('emailstuff').value}).then(function(object) {
-                alert("Stay posted to receive emails regarding MVCS club meetings & events!");
+                sweetAlert("Welcome!", "Stay posted to receive emails regarding MVCS club meetings & events!", "success")
             });
         }
     </script>
@@ -43,7 +43,6 @@
 </head>
 
 <body data-spy="scroll">
-
     <!---//Facebook button code-->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
