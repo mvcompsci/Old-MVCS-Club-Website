@@ -91,7 +91,7 @@
             <p class="intro" style="font-size: 24px; margin-bottom: 30px;">Monta Vista Computer Science Club<br>Dedicated to teaching, inspiring, and enabling students interested in computer science</p>
             <div class="btns">
                 <span class="input input--minoru">
-                    <input class=" input__field input__field--minoru" placeholder="Enter Your Email to Sign Up" type="text" id="emailstuff" />
+                    <input class=" input__field input__field--minoru" placeholder="Enter Your Email to Sign Up" type="text" id="emailstuff" onkeydown="if (event.keyCode == 13) saveToParse();"/>
                     <label class="input__label input__label--minoru" for="emailstuff"><br></label>
                     <a class="btn btn-cta-secondary" style="background-color: #FFD700; color: #993299;" href="javascript:void(0)" onclick="saveToParse();">SIGNUP</a>
               </span>
