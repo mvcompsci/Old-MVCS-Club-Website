@@ -32,11 +32,22 @@
     <script>
         Parse.initialize("H4NX7s5ZmbeK49sQnE70wxlXbSd6qHKyVTCO1brq", "Wvs0TMiAngCzXRVctlIGy4qE1bzWarrk21jDgibs");
         function saveToParse(){
-            var TestObject = Parse.Object.extend("Emails");
-            var testObject = new TestObject();
-            testObject.save({emails:    document.getElementById('emailstuff').value}).then(function(object) {
-                sweetAlert("Welcome!", "Stay posted to receive emails regarding MVCS club meetings & events!", "success")
-            });
+            var emailstr = document.getElementById('emailstuff').value+"";
+            if(!validateEmail(emailstr)){
+                sweetAlert("Error!", "Invalid Email Address", "error")
+            }
+            else{
+                var TestObject = Parse.Object.extend("Emails");
+                var testObject = new TestObject();
+                testObject.save({emails: emailstr}).then(function(object) {
+                    sweetAlert("Welcome!", "Stay posted to receive emails regarding MVCS club meetings & events!", "success")
+                });
+            }
+        }
+        function validateEmail(email)
+        {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
         }
     </script>
 
@@ -91,7 +102,7 @@
             <p class="intro" style="font-size: 24px; margin-bottom: 30px;">Monta Vista Computer Science Club<br>Dedicated to teaching, inspiring, and enabling students interested in computer science</p>
             <div class="btns">
                 <span class="input input--minoru">
-                    <input class=" input__field input__field--minoru" placeholder="Enter Your Email to Sign Up" type="text" id="emailstuff" onkeydown="if (event.keyCode == 13) saveToParse();"/>
+                    <input class=" input__field input__field--minoru" placeholder="Enter Your Email to Sign Up" type="text" id="emailstuff" /><!--onkeyup="if (event.keyCode == 13 && $('#emailstuff:focus')) saveToParse();"-->
                     <label class="input__label input__label--minoru" for="emailstuff"><br></label>
                     <a class="btn btn-cta-secondary" style="background-color: #FFD700; color: #993299;" href="javascript:void(0)" onclick="saveToParse();">SIGNUP</a>
               </span>
@@ -294,41 +305,14 @@
     <section id="contact" class="contact section has-pattern">
         <div class="container">
             <div class="contact-inner">
-                <h2 class="title  text-center">Contact</h2>
-                <p class="intro  text-center">I hope you find this Bootstrap template useful. <br />Feel free to get in touch if you have any questions or suggestions.</p>
-                <div class="author-message">
-                    <div class="profile">
-<!--                        <img class="img-responsive" src="assets/images/profile.png" alt="" />-->
-                    </div><!--//profile-->
-                    <div class="speech-bubble">
-                        <h3 class="sub-title">Want to get more freebies in the future?</h3>
-                        <p>I tweet about #UX and #webdev related resources/content at <a href="https://twitter.com/3rdwave_themes" target="_blank">@3rdwave_themes</a>
-                        <p>If you like what I do, you can follow me on twitter and I will keep you informed about my next free template there :)</p>
-                        <p><strong>[Tip for developers]:</strong> If you take on freelance work you can put a tailored message here about your availability to attract potential clients. Be creative and good luck!</p>
-                        <div class="source">
-                            <span class="name"><a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying Riley</a></span>
-                            <br />
-                            <span class="title">UX/UI Designer</span>
-                        </div><!--//source-->
-                    </div><!--//speech-bubble-->
-                </div><!--//author-message-->
+                </span><h1 class="highlight title text-center" style="color: #FFD700;">Contact</h2>
                 <div class="clearfix"></div>
-                <div class="info text-center">
-                    <h4 class="sub-title">Get Connected</h4>
-                    <ul class="social-icons list-inline">
-                        <li><a href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.facebook.com/3rdwavethemes" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/xiaoying"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="http://instagram.com/xyriley"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://dribbble.com/Xiaoying"><i class="fa fa-dribbble"></i></a></li>
-                        <li class="last"><a href="mailto: hello@3rdwavemedia.com"><i class="fa fa-envelope"></i></a></li>
-                    </ul>
-                </div><!--//info-->
+                <h3 style="text-align: center; color: white;">Email us at <a style="color: white;" href="mailto:mvcsclub@gmail.com" target="_top">mvcsclub@gmail.com</a></h3>
             </div><!--//contact-inner-->
         </div><!--//container-->
     </section><!--//contact-->
 
-    <!-- ******FOOTER****** -->
+    <!-- ******FOOTER******
     <footer class="footer">
         <div class="container text-center">
             <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
