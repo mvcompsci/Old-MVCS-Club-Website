@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
     <title>MVCS Club</title>
     <!-- Meta -->
@@ -31,38 +34,40 @@
     <![endif]-->
     <script>
         Parse.initialize("H4NX7s5ZmbeK49sQnE70wxlXbSd6qHKyVTCO1brq", "Wvs0TMiAngCzXRVctlIGy4qE1bzWarrk21jDgibs");
-        function saveToParse(){
-            var emailstr = document.getElementById('emailstuff').value+"";
-            if(!validateEmail(emailstr)){
+        function saveToParse() {
+            var emailstr = document.getElementById('emailstuff').value + "";
+            if (!validateEmail(emailstr)) {
                 sweetAlert("Error!", "Invalid Email Address", "error")
-            }
-            else{
+            } else {
                 var TestObject = Parse.Object.extend("Emails");
                 var testObject = new TestObject();
-                testObject.save({emails: emailstr}).then(function(object) {
+                testObject.save({
+                    emails: emailstr
+                }).then(function(object) {
                     sweetAlert("Welcome!", "Stay posted to receive emails regarding MVCS club meetings & events!", "success")
                 });
             }
         }
-        function validateEmail(email)
-        {
+        function validateEmail(email) {
             var re = /\S+@\S+\.\S+/;
             return re.test(email);
         }
     </script>
-
 </head>
 
 <body data-spy="scroll">
     <!---//Facebook button code-->
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!-- ******HEADER****** -->
     <header id="header" class="header">
@@ -71,7 +76,8 @@
                 <a class="scrollto" href="#promo">
                     <span class="logo-title">MVCS</span>
                 </a>
-            </h1><!--//logo-->
+            </h1>
+            <!--//logo-->
             <nav id="main-nav" class="main-nav navbar-right" role="navigation">
                 <div class="navbar-header">
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
@@ -79,8 +85,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button><!--//nav-toggle-->
-                </div><!--//navbar-header-->
+                    </button>
+                    <!--//nav-toggle-->
+                </div>
+                <!--//navbar-header-->
                 <div class="navbar-collapse collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
@@ -89,17 +97,22 @@
                         <li class="nav-item"><a class="scrollto" href="#features">Topics</a></li>
                         <li class="nav-item"><a class="scrollto" href="#news">News</a></li>
                         <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
-                    </ul><!--//nav-->
-                </div><!--//navabr-collapse-->
-            </nav><!--//main-nav-->
+                    </ul>
+                    <!--//nav-->
+                </div>
+                <!--//navabr-collapse-->
+            </nav>
+            <!--//main-nav-->
         </div>
-    </header><!--//header-->
+    </header>
+    <!--//header-->
 
     <!-- ******PROMO****** -->
     <section id="promo" class="promo section offset-header">
         <div class="container text-center">
             <h2 class="title"><span style="color: white;">MVCS</span><span class="highlight"> CLUB</span></h2>
-            <p class="intro" style="font-size: 24px; margin-bottom: 30px;">Monta Vista Computer Science Club<br>Dedicated to teaching, inspiring, and enabling students interested in computer science</p>
+            <p class="intro" style="font-size: 24px; margin-bottom: 30px;">Monta Vista Computer Science Club
+                <br>Dedicated to teaching, inspiring, and enabling students interested in computer science</p>
             <div class="btns">
                 <span class="input input--minoru">
                     <input class=" input__field input__field--minoru" placeholder="Enter Your Email to Sign Up" type="text" id="emailstuff"/>
@@ -109,9 +122,12 @@
             </div>
             <ul class="list-inline">
                 <li><a href="#" target="https://github.com/mv-compsci-club/">Our Projects</a></li>
-            </ul><!--//meta-->
-        </div><!--//container-->
-    </section><!--//promo-->
+            </ul>
+            <!--//meta-->
+        </div>
+        <!--//container-->
+    </section>
+    <!--//promo-->
     <!-- ******ABOUT****** -->
     <section id="about" class="about section">
         <div class="container">
@@ -125,8 +141,10 @@
                     <div class="content">
                         <h3 class="sub-title">Designed for developers</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div><!--//content-->
-                </div><!--//item-->
+                    </div>
+                    <!--//content-->
+                </div>
+                <!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
                         <i class="fa fa-clock-o"></i>
@@ -134,8 +152,10 @@
                     <div class="content">
                         <h3 class="sub-title">Time saver</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div><!--//content-->
-                </div><!--//item-->
+                    </div>
+                    <!--//content-->
+                </div>
+                <!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
                         <i class="fa fa-crosshairs"></i>
@@ -143,8 +163,10 @@
                     <div class="content">
                         <h3 class="sub-title">UX-centred</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div><!--//content-->
-                </div><!--//item-->
+                    </div>
+                    <!--//content-->
+                </div>
+                <!--//item-->
                 <div class="clearfix visible-md"></div>
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
@@ -153,8 +175,10 @@
                     <div class="content">
                         <h3 class="sub-title">Mobile-friendly</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div><!--//content-->
-                </div><!--//item-->
+                    </div>
+                    <!--//content-->
+                </div>
+                <!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
                         <i class="fa fa-code"></i>
@@ -162,8 +186,10 @@
                     <div class="content">
                         <h3 class="sub-title">Easy to customise</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div><!--//content-->
-                </div><!--//item-->
+                    </div>
+                    <!--//content-->
+                </div>
+                <!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
                         <i class="fa fa-coffee"></i>
@@ -171,24 +197,28 @@
                     <div class="content">
                         <h3 class="sub-title">LESS files included</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div><!--//content-->
-                </div><!--//item-->
-            </div><!--//row-->
-        </div><!--//container-->
-    </section><!--//about-->
+                    </div>
+                    <!--//content-->
+                </div>
+                <!--//item-->
+            </div>
+            <!--//row-->
+        </div>
+        <!--//container-->
+    </section>
+    <!--//about-->
 
     <!-- ******JOIN****** -->
     <section id="join" class="docs section">
         <div class="container">
             <div class="docs-inner">
                 <h2 class="title text-center">How to Join</h2>
-
-
-
-
-            </div><!--//docs-inner-->
-        </div><!--//container-->
-    </section><!--//features-->
+            </div>
+            <!--//docs-inner-->
+        </div>
+        <!--//container-->
+    </section>
+    <!--//features-->
 
     <!-- ******FEATURES****** -->
     <section id="features" class="features section">
@@ -203,8 +233,10 @@
                 <li><i class="fa fa-check"></i> LESS files included</li>
                 <li><i class="fa fa-check"></i> Compatible with all modern browsers</li>
             </ul>
-        </div><!--//container-->
-    </section><!--//features-->
+        </div>
+        <!--//container-->
+    </section>
+    <!--//features-->
 
 
 
@@ -212,49 +244,51 @@
     <section id="news" class="license section">
         <div class="container">
             <div class="license-inner">
-            <h2 class="title text-center">News</h2>
+                <h2 class="title text-center">News</h2>
                 <div class="info">
                     <p>This Bootstrap theme is made by UX designer <a href="https://www.linkedin.com/in/xiaoying" target="_blank">Xiaoying Riley</a> at 3rd Wave Media for developers and is <strong>100% FREE</strong> under the <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License (CC BY 3.0)</a></p>
                     <p><strong>[Tip for developers]:</strong> If your project is open source, you might want to put a <a href="https://www.paypal.com/us/cgi-bin/?cmd=_donate-intro-outside" target="_blank">PayPal "Donate" button</a> below so your users can express their gratitude. If your project is commercial, you can put a <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_singleitem-intro-outside" target="_blank">PayPal "Buy Now" button</a> instead.</p>
-                </div><!--//info-->
+                </div>
+                <!--//info-->
                 <div class="cta-container">
                     <div class="speech-bubble">
                         <p class="intro">If you are feeling generous and want to show your support to Xiaoying, you can buy her a beer or coffee via the PayPal donate button below. :)</p>
                         <div class="icon-holder  text-center"><i class="fa fa-smile-o"></i></div>
-                    </div><!--//speech-bubble-->
+                    </div>
+                    <!--//speech-bubble-->
                     <div class="btn-container  text-center">
                         <!--//You need to generate your own PayPal button - https://www.paypal.com/us/cgi-bin/?cmd=_donate-intro-outside -->
                         <!--PayPal generated code starts-->
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="Y46LJNXGAVVWW">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="Y46LJNXGAVVWW">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
                         </form>
                         <!--//PayPal generated code ends-->
 
-                    </div><!--//btn-container-->
-                </div><!--//cta-container-->
-            </div><!--//license-inner-->
-        </div><!--//container-->
-    </section><!--//how-->
+                    </div>
+                    <!--//btn-container-->
+                </div>
+                <!--//cta-container-->
+            </div>
+            <!--//license-inner-->
+        </div>
+        <!--//container-->
+    </section>
+    <!--//how-->
 
     <!-- ******CONTACT****** -->
     <section id="contact" class="contact section has-pattern">
         <div class="container">
             <div class="contact-inner">
-                </span><h1 class="highlight title text-center" style="color: #FFD700;">Contact</h2>
+                </span>
+                <h1 class="highlight title text-center" style="color: #FFD700;">Contact</h2>
                 <div class="clearfix"></div>
                 <h3 style="text-align: center; color: white;">Email us at <a style="color: white;" href="mailto:mvcsclub@gmail.com" target="_top">mvcsclub@gmail.com</a></h3>
             </div><!--//contact-inner-->
         </div><!--//container-->
     </section><!--//contact-->
-
-    <!-- ******FOOTER******
-    <footer class="footer">
-        <div class="container text-center">
-            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
     </footer><!--//footer-->
 
     <!-- Javascript -->
@@ -267,4 +301,3 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
-
