@@ -45,3 +45,6 @@ Temporary Items
 # Divshot Stuff
 .divshot-cache/*
 divshot.json
+
+#Parse keys
+assets/js/keys.js
