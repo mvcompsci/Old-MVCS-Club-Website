@@ -34,18 +34,34 @@
     <![endif]-->
     <script>
         Parse.initialize(ret1(), ret2());
+        var Emails = Parse.Object.extend("Emails");
+        var query = new Parse.Query(Emails);
+        var emailsArr = [];
+        query.find({
+            success: function(results) {
+                for(var i = 0 ; i < results.length;i++)
+                    emailsArr.push(results[i].get('emails')+"");
+            },
+            error: function(error) {
+            }
+        });
         function saveToParse() {
-            var emailstr = document.getElementById('emailstuff').value + "";
+            var emailstr = (document.getElementById('emailstuff').value + "").trim();
             if (!validateEmail(emailstr)) {
                 sweetAlert("Error!", "Invalid Email Address", "error")
             } else {
-                var TestObject = Parse.Object.extend("Emails");
-                var testObject = new TestObject();
-                testObject.save({
-                    emails: emailstr
-                }).then(function(object) {
+                if((emailsArr.indexOf(emailstr) > -1)){
                     sweetAlert("Welcome!", "Stay posted to receive emails regarding MVCS club meetings & events!", "success")
-                });
+                }
+                else{
+                    var TestObject = Parse.Object.extend("Emails");
+                    var testObject = new TestObject();
+                    testObject.save({
+                        emails: emailstr
+                    }).then(function(object) {
+                        sweetAlert("Welcome!", "Stay posted to receive emails regarding MVCS club meetings & events!", "success")
+                    });
+                }
             }
         }
         function validateEmail(email) {
