@@ -96,10 +96,16 @@
                 <div class="navbar-collapse collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#features">Topics</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#about" id="aboutabout">About</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#features" id="topicstopics">Topics</a></li>
                         <li class="nav-item"><a class="scrollto" href="#news">News</a></li>
                         <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
+                    -->
+                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+                        <li class="nav-item"><a class="scrollto" id="aboutabout">About</a></li>
+                        <li class="nav-item"><a class="scrollto" id="topicstopics">Resources</a></li>
+                        <li class="nav-item"><a class="scrollto" id="newsnews">News</a></li>
+                        <li class="nav-item last"><a class="scrollto" id="contactcontact">Contact</a></li>
                     </ul>
                     <!--//nav-->
                 </div>
@@ -116,6 +122,7 @@
             <h2 class="title"><span style="color: white;">MVCS</span><span class="highlight"> CLUB</span></h2>
             <p class="intro" style="font-size: 24px; margin-bottom: 30px;">Monta Vista Computer Science Club
                 <br>Dedicated to teaching, inspiring, and enabling students interested in computer science</p>
+                <!--
             <div class="btns">
                 <span class="input input--minoru">
                     <input class=" input__field input__field--minoru" placeholder="Enter Your Email to Sign Up" type="text" id="emailstuff"/>
@@ -123,6 +130,11 @@
                     <a class="btn btn-cta-secondary" style="background-color: #FFD700; color: #993299;" href="javascript:void(0)" onclick="saveToParse();">SIGNUP</a>
               </span>
             </div>
+        --><div class="btns">
+            <span class="input input--minoru">
+                <a class="btn btn-cta-secondary" style="background-color: #FFD700; color: #993299;" href="https://docs.google.com/forms/d/e/1FAIpQLSdDJstqqyQADCacqToE7bbn_HmDH_LCxIJDA9crgPJLWje0TA/viewform?usp=sf_link">SIGNUP</a>
+          </span>
+        </div>
             <ul class="list-inline">
                 <li><a href="#" target="https://github.com/mv-compsci-club/">Our Projects</a></li>
             </ul>
@@ -143,7 +155,9 @@
                     </div>
                     <div class="content">
                         <h3 class="sub-title">Awesome Lectures</h3>
-                        <p> Each week Wednesday at lunch in room E203, we lecture on a new and interesting topic, ranging from Cryptography to Spam Filtering. We optimize for topics that are outside-the-box, have practical applications, yet are easy enough to write code for <em> right off the bat </em> without needing much prior experience. All these lectures fit into a broad monthly topic.</p>
+                        <p> Each week <b>Wednesday at lunch in room E204</b>, we lecture on a new and interesting topic, ranging from Cryptography to Spam Filtering. We optimize for topics that are outside-the-box, have practical applications, yet are easy enough to write code for <em> right off the bat </em> without needing much prior experience.</p>
+                        <p>This year, we are also including topics specifically aimed towards those interested in <b>USACO</b>. Our highly qualified officers will guide you through essential topics in multiple levels of contest programming, from binary search to sophisticated data structures like Fenwick trees. </p>
+<!--
                         <p> This Month's Topic: <b> Searching </b> </p>
                         <p> Lectures for This Month </p>
 
@@ -154,7 +168,7 @@
                         <p><a href="crawly.py"> Python Web Crawler Code </a> (python crawly.py to run) </a></p>
 
                         <p><a href="file:"> Genetic Algorithms Code </a></p>
-                        
+-->
                     </div>
                     <!--//content-->
                 </div>
@@ -164,11 +178,10 @@
                         <i class="fa fa-clock-o"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">Monthly Contests</h3>
-                        <p> We have monthly contests based on the concepts we cover in Lecture Day. Prove that you've been paying attention by applying these concepts to real life problems! You can win prizes and demonstrate your understanding of computer science.
+                        <h3 class="sub-title">Contests</h3>
+                        <p> We plan to coordinate particpation in contests based on the concepts we cover in Lecture Day. Prove that you've been paying attention by applying these concepts to challenging problems! You can win prizes and demonstrate your understanding of computer science through these prestigious contests, such as <b>Stanford ProCo</b> and <b>Harker Programming Invitational</b>.
                         </p>
-                        <p> This Month's Contest: <b> Wikipedia Freefall! </b> Opens Oct. 31st!</p>
-                        <p> Read  <a href="https://docs.google.com/document/d/12NaQRL2JEDTq8a5CvaSP_IGQ21Dn6mv6dUIGx62soPM/edit?usp=sharing>"> problem description </a> here. </p>
+                        <p> Manish, head of the Algorithms division, will be providing additional information as the contest season nears.</p>
                     </div>
                     <!--//content-->
                 </div>
@@ -183,9 +196,10 @@
                     </div>
                     <div class="content">
                         <h3 class="sub-title">Algorithms Day</h3>
-                        <p> Do you want to <em> specialize</em>? If you are interested in algorithms or math, consider attending <b> Algorithms Day (Thursday After School) </b>. We'll teach you how to train for prestigious computing competitions such as USACO and ACSL. We've had an impressive success rate so far, producing 9 USACO Silver medalists and 2 USACO Gold medalists (out of about 200 worldwide). You will be coached by former USACO nationwide finalist Nikhil Cheerla. </p>
+                        <p> Do you want to <em> specialize</em>? If you are interested in algorithms or math, consider attending <b> Algorithms Day (Thursday After School) </b>. We'll teach you how to train for the ACSL, a prestigious computing competition that takes a unique approach. </p>
+                        <p> The <b>ACSL</b> is distinctive because it, as opposed to other contests like USACO, truly encapsulates the foundations of computer science. Through Manish's experienced instruction, you will gain expertise in a wide variety of highly applicable computer science skills, building from the ground up. </p>
                     </div>
-                    <!--//content-->
+                    <!--We've had an impressive success rate so far, producing 9 USACO Silver medalists and 2 USACO Gold medalists (out of about 200 worldwide). You will be coached by former USACO nationwide finalist Nikhil Cheerla. //content-->
                 </div>
                 <!--//item-->
                 <div class="item col-md-6 col-sm-6 col-xs-12">
@@ -193,9 +207,12 @@
                         <i class="fa fa-code"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title"> Work Day</h3>
-                        <p>
-                            Alternatively, attend <b> Work Day (Thursday Lunch) </b> if you want to explore computer science further, through areas such as web or app development. On Work Day, you can get Java or APCS homework help, work on monthly contests, or learn about development. We will teach about concepts such as collaborating on code using Git/GitHub, HTML/CSS/JS, and multi-platform app development. If you want to learn, get CS help, or simply chill, Work Day is the place for you.
+                        <h3 class="sub-title">Officers</h3>
+                        <p> Through our dedicated team of experienced and talented officers, we aim to provide a diverse, interesting, and enriching computer science experience to our members.
+                        </p>
+                        <p> We have officers that <b>specialize and excel</b> in various areas of CS, such as Anika, who has won prizes for her research in machine learning, and Ethan, who has extensive experience with USACO and teaches for the acclaimed AlphaStar Academy.
+                        </p>
+                        <p> Continuing into this year, our officer team has worked to develop a curriculum that we hope will help inspire and develop the next generation of computer scientists at Monta Vista.
                         </p>
                     </div>
                 </div>
@@ -210,10 +227,8 @@
         <div class="container text-center">
             <h2 class="title" style="color:white;">Links & Resources</h2>
             <ul class=" list-unstyled">
-                <li>Sept. 9: <a  style="color:white; text-decoration: underline;" href = "https://docs.google.com/presentation/d/11eETwkxr6Q6oryxiuyL7ZOxQNGKERtEGqEdqZF_1fTI/edit#slide=id.gc6f8badac_0_0">General Intro to the Club</a></li>
-                <li>Sept. 16: <a  style="color:white; text-decoration: underline;" href = "https://docs.google.com/presentation/d/11WRH_rfaMdvY6w_c1dXKexeXtHiXGK7izn0PlzzRjfU/edit?usp=sharing">Bayes' Theorem</a></li>
-                <li>Sept. 23: <a  style="color:white; text-decoration: underline;" href = "https://docs.google.com/presentation/d/1WDcUTbzg5ioCTfGleLT2imM0j4_rU8dq64ZMJ1sxhyw/edit?usp=sharing">Spam Filtering (Application of Bayes' Theorem)</a></li>
-                <li>Sept. 30: <a  style="color:white; text-decoration: underline;" href = "https://docs.google.com/presentation/d/14la00GNUTZfJjcuIqdvppM6nUlTObhHbnHebxjgtF_w/edit?usp=sharing">Spell Check (Challenge Specification)</a></li>
+                <li>Sept. 12: General Intro to the Club (coming soon!)</li>
+
             </ul>
         </div>
         <!--//container-->
@@ -225,7 +240,7 @@
             <div class="license-inner" >
                 <h2 class="title text-center" style="margin-bottom: 0px;">News</h2>
                 <ul class="list-unstyled">
-                    <li><h3>Spell check contest!</h3><h5>Due by Friday, October 9</h5><p>This is the first contest of the year, so show off your coding skills! Your task is to create a spell check (use Bayes' Theorem!!!) and feel free to use the powerpoints for reference. Send your finished program to mvcsclub@gmail.com with the subject line: Spell Check Contest. Good luck!</p></li>
+                    <li><h3>Interest Meeting!</h3><h5>Wednesday, September 12</h5><p>This is the first meeting of the year, where we will introduce our club and kick off the year with an intriguing lecture on the <b>halting problem</b>, a foundational problem in computability theory.</p></li>
                 </ul>
             </div>
             <!--//license-inner-->
@@ -237,13 +252,24 @@
     <section id="contact" class="contact section has-pattern">
         <div class="container">
             <div class="contact-inner">
-
-                <h1 class="highlight title text-center" style="color: #FFD700;">Contact</h1>
+                <h2 class="title text-center" style="color:white;">Contact</h2>
                 <div class="clearfix"></div>
                 <h3 style="text-align: center; color: white;">Email us at <a style="color: white;" href="mailto:mvcsclub@gmail.com" target="_top">mvcsclub@gmail.com</a></h3>
             </div><!--//contact-inner-->
         </div><!--//container-->
     </section><!--//contact-->
+    <!-- ******CREDITS****** -->
+    <section id="credits" class="license section">
+        <div class="container">
+            <div class="credits-inner">
+                <h2 class="title text-center" style="">Credits</h2>
+                <h3 class="sub-title text-center">Website Design by Mahesh Murag</h3>
+                <h3 class="sub-title text-center">Maintained by Webmaster Ethan Guo</h3>
+            </div><!--//credits-inner-->
+            <!--//license-inner-->
+        </div>
+        <!--//container-->
+    </section>
     <!-- Javascript -->
     <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
@@ -252,5 +278,31 @@
     <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+
+    $(document).ready(function (){
+        $("#aboutabout").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#about").offset().top
+            }, 1000);
+        });
+        $("#topicstopics").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#features").offset().top
+            }, 1000);
+        });
+        $("#newsnews").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#news").offset().top
+            }, 1000);
+        });
+        $("#contactcontact").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#contact").offset().top
+            }, 1000);
+        });
+    });
+
+    </script>
 </body>
 </html>
